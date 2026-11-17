@@ -1,0 +1,19 @@
+JDK: OpenJDK 21.0.12.1
+Compile: javac Task06/*.java
+Run: java -cp Task06 Triage
+
+Treatment order (poll):
+Bala(S1,#1)
+Farah(S1,#5)
+Charu(S2,#2)
+Deepak(S2,#3)
+Asha(S3,#0)
+Hari(S3,#7)
+Gokul(S4,#6)
+Esha(S5,#4)
+
+Run: java -cp Task06 TriageBenchmark
+patients,avg_insert_and_poll_ms
+1000,1.375
+10000,7.947
+100000,79.912
