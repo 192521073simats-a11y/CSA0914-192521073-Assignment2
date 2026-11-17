@@ -16,7 +16,7 @@ public class StringBuildBenchmark {
             if(r>=0){total+=elapsed;heapDelta+=Math.max(0,after-before);}
         }
         long intermediate=label.equals("StringPlus")?(long)Math.max(0,fields-1)*tickets:0;
-        System.out.printf(Locale.ROOT,"%s,%d,%d,%.3f,%d,%.1f,%.1f%n",label,fields,tickets,total/(double)RUNS/1_000_000.0,intermediate,heapDelta/(double)RUNS/1024.0,checksum);
+        System.out.printf(Locale.ROOT,"%s,%d,%d,%.3f,%d,%.1f,%d%n",label,fields,tickets,total/(double)RUNS/1_000_000.0,intermediate,heapDelta/(double)RUNS/1024.0,checksum);
     }
     public static void main(String[] args){
         System.out.println("method,fields,tickets,avg_ms,estimated_intermediate_strings,avg_positive_heap_delta_KB,checksum");
