@@ -1,0 +1,14 @@
+JDK: OpenJDK 21.0.12.1
+Compile: javac Task01/*.java
+Run: java -cp Task01 StringBuildBenchmark
+
+method,fields,tickets,avg_ms,estimated_intermediate_strings,avg_positive_heap_delta_KB,checksum
+StringPlus,6,1,0.157,5,41.0,882
+StringBuilder,6,1,0.238,0,41.0,882
+StringBuffer,6,1,0.170,0,41.0,882
+StringPlus,50,10000,122.035,490000,17000.7,76300000
+StringBuilder,50,10000,35.555,0,4504.2,76300000
+StringBuffer,50,10000,16.450,0,4906.6,76300000
+StringPlus,100,500,36.800,49500,8599.9,7665000
+StringBuilder,100,500,1.406,0,3474.8,7665000
+StringBuffer,100,500,1.366,0,3488.3,7665000
