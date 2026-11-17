@@ -1,0 +1,8 @@
+JDK: OpenJDK 21.0.12.1
+Compile: javac Task02/*.java
+Run: java -cp Task02 PlaylistBenchmark
+
+size,arrayAppend,linkedAppend,arrayFront,linkedFront,arrayMiddle,linkedMiddle,arrayGet,linkedGet,arrayIter,linkedIter (ns/op)
+1000,434,1111,963,1844,2017,6686,384,3433,301738,279836
+10000,1625,806,6121,804,3576,78317,234,29406,1036231,980729
+50000,504,695,14032,1199,9422,194104,632,111312,886088,786888
