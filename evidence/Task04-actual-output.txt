@@ -1,0 +1,8 @@
+JDK: OpenJDK 21.0.12.1
+Compile: javac Task04/*.java
+Run: java -cp Task04 InventoryBenchmark
+
+size,hash_100k_lookup_ns,tree_100k_lookup_ns,tree_sorted_report_ns,linked_insertion_report_ns,hash_sort_report_ns
+100,17822719,26383675,387980,786072,804719
+10000,21025426,53822513,3640273,2783174,13552922
+50000,31800538,85296592,4568039,3612750,32473638
