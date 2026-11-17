@@ -1,0 +1,14 @@
+JDK: OpenJDK 21.0.12.1
+Compile: javac Task07/*.java
+Run: java -cp Task07 InventoryRedesign
+
+Lookup MED002: 7
+Sorted report:
+MED001=30
+MED002=7
+MED003=12
+Insertion report:
+MED003=12
+MED001=30
+MED002=7
+After removal: null
