@@ -1,0 +1,8 @@
+JDK: OpenJDK 21.0.12.1
+Compile: javac Task03/*.java
+Run: java -cp Task03 StudentSetDemo
+
+Broken set size (may be 2): 2
+Unique students: 2
+Same record duplicate test: 1
+Different registration test: 2
