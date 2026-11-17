@@ -4,7 +4,7 @@ public class StringBuildBenchmark {
     static String[] fields(int count){String[] a=new String[count];for(int i=0;i<count;i++)a[i]="Field"+i+"=PassengerData";return a;}
     static String plus(String[] f){String s="";for(String x:f)s+=x+(char)10;return s;}
     static String builder(String[] f){StringBuilder b=new StringBuilder();for(String x:f)b.append(x).append((char)10);return b.toString();}
-    static String buffer(String[] f){StringBuffer b=new StringBuffer();for(String x:f)b.append(x).append('\\n');return b.toString();}
+    static String buffer(String[] f){StringBuffer b=new StringBuffer();for(String x:f)b.append(x).append((char)10);return b.toString();}
     interface Work{String run(String[] f);}
     static long usedHeap(){Runtime r=Runtime.getRuntime();return r.totalMemory()-r.freeMemory();}
     static void measure(String label,int fields,int tickets,Work w){
