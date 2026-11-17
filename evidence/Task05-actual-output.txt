@@ -1,0 +1,7 @@
+JDK: OpenJDK 21.0.12.1
+Compile: javac Task05/*.java
+Run: java -cp Task05 LeaderboardDemo
+
+Ranking: [Falcons(20,8), Tigers(20,8), Wolves(20,5), Bears(18,9), Eagles(18,9)]
+Unsafe comparator result (may be wrong): [Low(-2147483648,0), Huge(2147483647,0)]
+Safe comparator result: [Huge(2147483647,0), Low(-2147483648,0)]
